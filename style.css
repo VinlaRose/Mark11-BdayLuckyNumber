@@ -8,20 +8,23 @@
     --fourth-color:#FD6F91;
 
     }
-    * {
-        font-family: "Lato", sans-serif;
-        }
+    
     body{
-        /* background-color:#94D7C7; */
+        font-family: "Lato", sans-serif;
+        width: 100%;
     }
     
     .container{
+        width: 300px;
+        height: 500px;
+        padding: 15px;
+        
+        margin: 0 auto;
         text-align: center;
-        width: 500px;
-        margin: auto auto;
-        display: flex;
-        flex-direction: column;
-        background-color: #FFF6B0;
+        
+        
+        
+        
     }
 
     .heading{
@@ -43,7 +46,7 @@
     input {
         border-radius: 5px;
         padding: 0.5rem;
-        border: transparent;
+        border: 5px solid gray;
         font-size: large;
         margin: 1rem 0;
         max-width: 150px;
