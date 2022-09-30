@@ -22,7 +22,12 @@ checkButton.addEventListener("click" ,function match(){
 
   if(dateOfBirth.value === "" || favouriteNumber.value === ""){
     return showMessage("Enter all feilds.")
-  }else if(sum % favNo === 0){
+  }
+  else if(dateOfBirth.value < 0 || favouriteNumber.value < 0){
+    return showMessage("Enter positive values only.")
+
+  }
+  else if(sum % favNo === 0){
     console.log("wow!! your favourite number is your lucky number as well");
     return showMessage(`Wow!! your favourite number ${favNo} is a lucky number!!  `);
 
